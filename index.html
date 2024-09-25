@@ -1,73 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="he" dir="rtl">
     <head>
-
+        <title>הגלריה של איה | Aya's Gallery</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
-    <header>
-        <h1>איה זהר | ציירת</h1>
-        <h1>Aya Zohar | Painter</h1>
+
+    <header id="random-header">
+        <h1>איה זהר | ציירת<br>Aya Zohar | Painter</h1>
         <nav>
-            <div><a href="#gallery">גלריה | Gallery</a></div>
-            <div><a href="#about">אודות | About me</a></div>
-            <div><a href="#contact">יצירת קשר | Contact</a></div>
+            <ul class="nav-list">
+                <li><a href="#gallery">גלריה | Gallery</a></li>
+                <li><a href="#about">אודות | About me</a></li>
+                <li><a href="#contact">יצירת קשר | Contact</a></li>
+            </ul>
         </nav>
+        <script src="script.js"></script>
     </header>
 
     <section id="gallery">
-        <h3>גלריה | Gallery</h3>
-        <div>
-            <img src="paintings\6F66DF7F-D17C-4E6D-BF87-3D00FE4829E2.jpg">
-        </div>
+        <h2>גלריה | Gallery</h2>
+        <div class="gallery-container">
+            <img src="paintings\ravid-4-2024.jpg" class="gallery-item">
+            <img src="paintings\ravid-3-2024.jpg" class="gallery-item">
+            <img src="paintings\ravid-2-2024.jpg" class="gallery-item">
+            <img src="paintings\ravid-1-2024.jpg" class="gallery-item">
+            <img src="paintings\home-2024.jpg" class="gallery-item">
+            <img src="paintings\view-from-muki-2024.HEIC" class="gallery-item">
+            <img src="paintings\the-adventure-2024.jpg" class="gallery-item">
+            <img src="paintings\butterfly-1-2023.jpg" class="gallery-item">
+            <img src="paintings\butterfly-2-2023.jpg" class="gallery-item">
+            <img src="paintings\butterfly-3-2023.jpg" class="gallery-item">
+            <img src="paintings\view-from-ravid-2023.jpg" class="gallery-item">
+            <img src="paintings\still-life-2023.jpg" class="gallery-item">
+            <img src="paintings\lighthouse-2023.jpg" class="gallery-item">
+            <img src="paintings\figures-2022.jpg" class="gallery-item">
+            <img src="paintings\roi-2022.jpg" class="gallery-item">
+            <img src="paintings\paperboat-2022.jpg" class="gallery-item">
+            <img src="paintings\bird-2021.jpg" class="gallery-item">
+            <img src="paintings\alfie-2019.jpg" class="gallery-item">
+            <img src="paintings\self-from-back-2017.jpg" class="gallery-item">
+            <img src="paintings\disco-cat-2016.jpg" class="gallery-item">
+            <img src="paintings\hamburg-watertower-2016.jpg" class="gallery-item">
+
+
+
+    </div>
     </section>
 
-    <section id="about">
+    <section class="two-columns-container">
+        <div class="inner-section text">
         <h3>אודות</h3>
         <p>אני איה זהר, 35, אמנית מחיפה. מציירת בעיקר בצבעי שמן ובצבעי מים, 
             ולעתים גם בצבעי אקריליק, ספריי ומדיומים אחרים. 
             ההשכלה האמנותית שלי כוללת מספר קורסי ציור עם מורים שונים, בנוסף להדרכה עצמית רבה. 
             אני מוצאת השראה בעיקר בטבע ובבעלי החיים סביבי, ומצפה לשתף אתכם בעבודותיי.</p>
-        <h3>About Me</h3>
-        <p>I’m Aya Zohar, an artist based in Haifa, Israel. At 35, I primarily work with oils and watercolors, 
+        <h3 class="eng">About Me</h3>
+        <p class="eng">I’m Aya Zohar, an artist based in Haifa, Israel. At 35, I primarily work with oils and watercolors, 
             though I occasionally explore acrylics, spray paint, and other mediums. My education as an artist 
             includes several painting courses with various teachers, complemented by a lot of self-guidance. 
             I find inspiration mainly in the nature and animals around me. I look forward to sharing my work with you.</p>
-    </section>
-    <section>
+        </div>
+        <div class="inner-section image">
         <img src="self.JPG">
+    </div>
     </section>
-    <section id="contact">
-       <form>
-            <label for="name">שם מלא | Full Name</label><br>
-            <input type="text" id="name" name="name" required><br><br>
-            
-            <label for="phone">מספר טלפון | Phone Number</label><br>
-            <input type="tel" id="phone" name="phone"><br><br>
-            
-            <label for="email">דוא"ל | Email</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="message">תוכן הפניה | Message</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-            
-            <input type="submit" value="שלח | Submit">
-       </form> 
-    </section>
-    <section>
-        <h5>יצירת קשר | Contact</h5>
-        <p>054-9732639</p>
-        <p>ayazohar@gmail.com</p>
+
+    <section class="two-columns-container">
+       <div class="wider-section">
+        <form>
+            <div class="form-group">
+                <label for="name">שם מלא | Full Name</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="phone">מספר טלפון | Phone Number</label><br>
+                <input type="tel" id="phone" name="phone"><br><br>
+            </div>
+            <div class="form-group">
+                <label for="email">דוא"ל | Email</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="message">תוכן הפניה | Message</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            </div>
+            <div class="form-group">
+            <button type="submit">שלח | Submit</button>
+        </div>
+       </form>
+    </div> 
+    <div class="thinner-section">
+        <h3>יצירת קשר | Contact</h3>
+        <p>054-9732639<br>ayazohar@gmail.com</p>
         <a href="https://www.instagram.com/ayazohar/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width:30px; height:30px;">
-        ayazohar</a>
+            <div class="icon"></div>
+        <br>ayazohar</a>
+    </div>
     </section>
 
     <footer>
-        <div><a href="#gallery">גלריה | Gallery</a></div>
-        <div><a href="#about">אודות | About me</a></div>
-        <div><a href="#contact">יצירת קשר | Contact</a></div>
+        <ul>
+            <li><a href="#gallery">גלריה | Gallery</a></li>
+            <li><a href="#about">אודות | About me</a></li>
+            <li><a href="#contact">יצירת קשר | Contact</a></li>
+        </ul>
     </footer>
 
 </body>
