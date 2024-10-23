@@ -1,5 +1,6 @@
 
 body {
+    direction: rtl;
     background-color: #FAF0E6;
     color: #2F4F4F;
     margin: 0; 
@@ -76,6 +77,70 @@ a{
     margin: 10px;
     height: 200px;
     width: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.modal-content {
+    background-color: #FAF0E6;
+}
+
+.modal-img {
+    max-height: 80vh;
+    max-width: 60%;
+    height: auto;
+}
+
+.modal-header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: none;
+}
+
+.modal-body {
+    background-color: #FAF0E6;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    align-items: start;
+    text-align: right;
+    align-items: center;
+}
+
+.modal-body .modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+}
+
+#modalDescription {
+    flex: 1;
+    margin-top: 10px;
+}
+
+.btn-close {
+    order: 3;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .modal-info {
+        text-align: center;
+    }
 }
 
 .two-columns-container {
@@ -177,6 +242,7 @@ form {
 #contact p{
     margin-top: 0;
 }
+
   .icon {
     width: 32px;
     height: 32px;
@@ -229,13 +295,13 @@ footer li a {
     }
 
     .form-group label {
-        width: 100%; /* Let labels take the full width */
-        margin-left: 0; /* Remove left margin for mobile */
+        width: 100%;
+        margin-left: 0;
     }
 
     .form-group input,
     .form-group textarea {
-        width: 100%; /* Full width for inputs */
-        min-width: 100%; /* Prevent shrinking */
+        width: 100%;
+        min-width: 100%;
     }
 }

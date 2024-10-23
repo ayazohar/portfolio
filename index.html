@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>הגלריה של איה | Aya's Gallery</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
 
@@ -27,10 +28,22 @@
     <section id="gallery">
         <h2>גלריה | Gallery</h2>
         <div class="gallery-container">
-            <img src="paintings\ravid-4-2024.jpg" class="gallery-item">
-            <img src="paintings\ravid-3-2024.jpg" class="gallery-item">
-            <img src="paintings\ravid-2-2024.jpg" class="gallery-item">
-            <img src="paintings\ravid-1-2024.jpg" class="gallery-item">
+            <img src="paintings\ravid-4-2024.jpg" 
+                class="gallery-item" 
+                alt="Ravid-4" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal" 
+                onclick="updateModal(this.src, 'Ravid-4', 'Watercolor on paper, 13*18, 2024')">
+            <img src="paintings\ravid-3-2024.jpg" 
+                class="gallery-item"
+                alt="Ravid-3" 
+                data-bs-toggle="modal" 
+                data-bs-target="#imageModal" 
+                onclick="updateModal(this.src, 'Ravid-3', 'Watercolor on paper, 13*18, 2024')">
+            <img src="paintings\ravid-2-2024.jpg" 
+                class="gallery-item">
+            <img src="paintings\ravid-1-2024.jpg" 
+                class="gallery-item">
             <img src="paintings\home-2024.jpg" class="gallery-item">
             <img src="paintings\view-from-muki-2024.HEIC" class="gallery-item">
             <img src="paintings\the-adventure-2024.jpg" class="gallery-item">
@@ -48,11 +61,28 @@
             <img src="paintings\self-from-back-2017.jpg" class="gallery-item">
             <img src="paintings\disco-cat-2016.jpg" class="gallery-item">
             <img src="paintings\hamburg-watertower-2016.jpg" class="gallery-item">
-
-
-
-    </div>
+        </div>
     </section>
+
+    <!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="" id="modalImage" class="modal-img" alt="Full size painting">
+            <div class="modal-info">
+                <h5 class="modal-title" id="imageModalLabel"></h5>
+                <p id="modalDescription"></p>
+            </div>
+            <p id="modalDescription"></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <section class="two-columns-container">
         <div class="wider-section text">
@@ -112,6 +142,8 @@
             <li><a href="#contact">יצירת קשר | Contact</a></li>
         </ul>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

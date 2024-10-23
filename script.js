@@ -13,3 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const header = document.getElementById('random-header');
     header.style.backgroundImage = randomImage;
 });
+
+function updateModal(imgSrc, title, description) {
+    document.getElementById('modalImage').src = imgSrc;
+    document.getElementById('imageModalLabel').textContent = title;
+    document.getElementById('modalDescription').textContent = description;
+    console.log('Modal updated:', {imgSrc, title, description});
+}
