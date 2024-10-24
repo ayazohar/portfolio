@@ -1,149 +1,182 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <title>הגלריה של איה | Aya's Gallery</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>הגלריה של איה | Aya's Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <body>
-
-
+  <body>
     <header id="random-header">
-        <h1>איה זהר | ציירת<br>Aya Zohar | Painter</h1>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#gallery">גלריה | Gallery</a></li>
-                <li><a href="#about">אודות | About me</a></li>
-                <li><a href="#contact">יצירת קשר | Contact</a></li>
-            </ul>
-        </nav>
-        <script src="script.js"></script>
+      <h1>איה זהר | ציירת<br />Aya Zohar | Painter</h1>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#gallery">גלריה | Gallery</a></li>
+          <li><a href="#about">אודות | About me</a></li>
+          <li><a href="#contact">יצירת קשר | Contact</a></li>
+        </ul>
+      </nav>
+      <script src="script.js"></script>
     </header>
 
     <section id="gallery">
-        <h2>גלריה | Gallery</h2>
-        <div class="gallery-container">
-            <img src="paintings\ravid-4-2024.jpg" 
-                class="gallery-item" 
-                alt="Ravid-4" 
-                data-bs-toggle="modal" 
-                data-bs-target="#imageModal" 
-                onclick="updateModal(this.src, 'Ravid-4', 'Watercolor on paper, 13*18, 2024')">
-            <img src="paintings\ravid-3-2024.jpg" 
-                class="gallery-item"
-                alt="Ravid-3" 
-                data-bs-toggle="modal" 
-                data-bs-target="#imageModal" 
-                onclick="updateModal(this.src, 'Ravid-3', 'Watercolor on paper, 13*18, 2024')">
-            <img src="paintings\ravid-2-2024.jpg" 
-                class="gallery-item">
-            <img src="paintings\ravid-1-2024.jpg" 
-                class="gallery-item">
-            <img src="paintings\home-2024.jpg" class="gallery-item">
-            <img src="paintings\view-from-muki-2024.HEIC" class="gallery-item">
-            <img src="paintings\the-adventure-2024.jpg" class="gallery-item">
-            <img src="paintings\butterfly-1-2023.jpg" class="gallery-item">
-            <img src="paintings\butterfly-2-2023.jpg" class="gallery-item">
-            <img src="paintings\butterfly-3-2023.jpg" class="gallery-item">
-            <img src="paintings\view-from-ravid-2023.jpg" class="gallery-item">
-            <img src="paintings\still-life-2023.jpg" class="gallery-item">
-            <img src="paintings\lighthouse-2023.jpg" class="gallery-item">
-            <img src="paintings\figures-2022.jpg" class="gallery-item">
-            <img src="paintings\roi-2022.jpg" class="gallery-item">
-            <img src="paintings\paperboat-2022.jpg" class="gallery-item">
-            <img src="paintings\bird-2021.jpg" class="gallery-item">
-            <img src="paintings\alfie-2019.jpg" class="gallery-item">
-            <img src="paintings\self-from-back-2017.jpg" class="gallery-item">
-            <img src="paintings\disco-cat-2016.jpg" class="gallery-item">
-            <img src="paintings\hamburg-watertower-2016.jpg" class="gallery-item">
-        </div>
+      <h2>גלריה | Gallery</h2>
+      <div class="gallery-container">
+        <img
+          src="paintings\ravid-4-2024.jpg"
+          class="gallery-item"
+          alt="Ravid-4"
+          data-bs-toggle="modal"
+          data-bs-target="#imageModal"
+          data-title="Ravid-4"
+          data-description="Watercolor on paper, 13*18, 2024"
+        />
+        <img
+          src="paintings\ravid-3-2024.jpg"
+          class="gallery-item"
+          alt="Ravid-3"
+          data-bs-toggle="modal"
+          data-bs-target="#imageModal"
+          data-title="Ravid-3"
+          data-description="Watercolor on paper, 13*18, 2024"
+        />
+        <img src="paintings\ravid-2-2024.jpg" class="gallery-item" />
+        <img src="paintings\ravid-1-2024.jpg" class="gallery-item" />
+        <img src="paintings\home-2024.jpg" class="gallery-item" />
+        <img src="paintings\view-from-muki-2024.HEIC" class="gallery-item" />
+        <img src="paintings\the-adventure-2024.jpg" class="gallery-item" />
+        <img src="paintings\butterfly-1-2023.jpg" class="gallery-item" />
+        <img src="paintings\butterfly-2-2023.jpg" class="gallery-item" />
+        <img src="paintings\butterfly-3-2023.jpg" class="gallery-item" />
+        <img src="paintings\view-from-ravid-2023.jpg" class="gallery-item" />
+        <img src="paintings\still-life-2023.jpg" class="gallery-item" />
+        <img src="paintings\lighthouse-2023.jpg" class="gallery-item" />
+        <img src="paintings\figures-2022.jpg" class="gallery-item" />
+        <img src="paintings\roi-2022.jpg" class="gallery-item" />
+        <img src="paintings\paperboat-2022.jpg" class="gallery-item" />
+        <img src="paintings\bird-2021.jpg" class="gallery-item" />
+        <img src="paintings\alfie-2019.jpg" class="gallery-item" />
+        <img src="paintings\self-from-back-2017.jpg" class="gallery-item" />
+        <img src="paintings\disco-cat-2016.jpg" class="gallery-item" />
+        <img src="paintings\hamburg-watertower-2016.jpg" class="gallery-item" />
+      </div>
     </section>
 
     <!-- Modal -->
-<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-          </button>
-        </div>
-        <div class="modal-body">
-            <img src="" id="modalImage" class="modal-img" alt="Full size painting">
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src=""
+              id="modalImage"
+              class="modal-img"
+              alt="Full size painting"
+            />
             <div class="modal-info">
-                <h5 class="modal-title" id="imageModalLabel"></h5>
-                <p id="modalDescription"></p>
+              <h5 class="modal-title" id="imageModalLabel"></h5>
+              <p id="modalDescription"></p>
             </div>
             <p id="modalDescription"></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
     <section class="two-columns-container">
-        <div class="wider-section text">
+      <div class="wider-section text">
         <h3>אודות</h3>
-        <p>אני איה זהר, 35, אמנית מחיפה. מציירת בעיקר בצבעי שמן ובצבעי מים, 
-            ולעתים גם בצבעי אקריליק, ספריי ומדיומים אחרים. 
-            ההשכלה האמנותית שלי כוללת מספר קורסי ציור עם מורים שונים, בנוסף להדרכה עצמית רבה. 
-            אני מוצאת השראה בעיקר בטבע ובבעלי החיים סביבי, ומצפה לשתף אתכם בעבודותיי.</p>
+        <p>
+          אני איה זהר, 35, אמנית מחיפה. מציירת בעיקר בצבעי שמן ובצבעי מים,
+          ולעתים גם בצבעי אקריליק, ספריי ומדיומים אחרים. ההשכלה האמנותית שלי
+          כוללת מספר קורסי ציור עם מורים שונים, בנוסף להדרכה עצמית רבה. אני
+          מוצאת השראה בעיקר בטבע ובבעלי החיים סביבי, ומצפה לשתף אתכם בעבודותיי.
+        </p>
         <h3 class="eng">About Me</h3>
-        <p class="eng">I’m Aya Zohar, an artist based in Haifa, Israel. At 35, I primarily work with oils and watercolors, 
-            though I occasionally explore acrylics, spray paint, and other mediums. My education as an artist 
-            includes several painting courses with various teachers, complemented by a lot of self-guidance. 
-            I find inspiration mainly in the nature and animals around me. I look forward to sharing my work with you.</p>
-        </div>
-        <div class="thinner-section image">
-        <img src="self.JPG">
-    </div>
+        <p class="eng">
+          I’m Aya Zohar, an artist based in Haifa, Israel. At 35, I primarily
+          work with oils and watercolors, though I occasionally explore
+          acrylics, spray paint, and other mediums. My education as an artist
+          includes several painting courses with various teachers, complemented
+          by a lot of self-guidance. I find inspiration mainly in the nature and
+          animals around me. I look forward to sharing my work with you.
+        </p>
+      </div>
+      <div class="thinner-section image">
+        <img src="self.JPG" />
+      </div>
     </section>
 
     <section class="two-columns-container">
-       <div class="wider-section">
+      <div class="wider-section">
         <h3>יצירת קשר | Contact</h3>
         <form>
-            <div class="form-group">
-                <label for="name">שם מלא | Full Name</label><br>
-                <input type="text" id="name" name="name" required><br>
-            </div>
-            <div class="form-group">
-                <label for="phone">מספר טלפון | Phone Number</label><br>
-                <input type="tel" id="phone" name="phone"><br>
-            </div>
-            <div class="form-group">
-                <label for="email">דוא"ל | Email</label><br>
-                <input type="email" id="email" name="email" required><br>
-            </div>
-            <div class="form-group">
-                <label for="message">תוכן הפניה | Message</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-            </div>
-            <div class="form-group">
+          <div class="form-group">
+            <label for="name">שם מלא | Full Name</label><br />
+            <input type="text" id="name" name="name" required /><br />
+          </div>
+          <div class="form-group">
+            <label for="phone">מספר טלפון | Phone Number</label><br />
+            <input type="tel" id="phone" name="phone" /><br />
+          </div>
+          <div class="form-group">
+            <label for="email">דוא"ל | Email</label><br />
+            <input type="email" id="email" name="email" required /><br />
+          </div>
+          <div class="form-group">
+            <label for="message">תוכן הפניה | Message</label><br />
+            <textarea id="message" name="message" rows="4" required></textarea
+            ><br />
+          </div>
+          <div class="form-group">
             <button type="submit">שלח | Submit</button>
-        </div>
-       </form>
-    </div> 
-    <div class="thinner-section" id="contact">
-        <p>054-9732639<br>ayazohar@gmail.com</p>
+          </div>
+        </form>
+      </div>
+      <div class="thinner-section" id="contact">
+        <p>054-9732639<br />ayazohar@gmail.com</p>
         <a href="https://www.instagram.com/ayazohar/" target="_blank">
-            <div class="icon"></div>
-        <br>ayazohar</a>
-    </div>
+          <div class="icon"></div>
+          <br />ayazohar</a
+        >
+      </div>
     </section>
 
     <footer>
-        <ul>
-            <li><a href="#gallery">גלריה | Gallery</a></li>
-            <li><a href="#about">אודות | About me</a></li>
-            <li><a href="#contact">יצירת קשר | Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#gallery">גלריה | Gallery</a></li>
+        <li><a href="#about">אודות | About me</a></li>
+        <li><a href="#contact">יצירת קשר | Contact</a></li>
+      </ul>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-
-</body>
+  </body>
 </html>
