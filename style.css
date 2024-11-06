@@ -106,9 +106,10 @@ a{
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
-    align-items: start;
+    align-items: flex-start;
     text-align: right;
     align-items: center;
+    justify-content: center;
 }
 
 .modal-body .modal-info {
@@ -121,11 +122,31 @@ a{
 #modalDescription {
     flex: 1;
     margin-top: 10px;
+    white-space: pre-line;
 }
 
 .btn-close {
     order: 3;
     margin: 0;
+}
+
+.zoom-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Adjust as needed */
+    max-width: 600px;
+    margin: auto;
+    cursor: zoom-in;
+}
+
+.zoom-image {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.zoom-container:hover .zoom-image {
+    transform: scale(1.5); /* Adjust scale to control zoom level */
+    cursor: zoom-out;
 }
 
 @media (max-width: 768px) {
