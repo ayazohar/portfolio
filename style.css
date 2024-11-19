@@ -25,7 +25,12 @@ h1 {
 
 h2 {
     font-size: 28px;
+    margin:20px 0px;
     
+}
+
+h3{
+    margin:20px 0px;
 }
 
 a{
@@ -36,6 +41,17 @@ a{
 * {
     box-sizing: border-box;  /* Makes padding included in width calculations */
 }
+
+.fade-in {
+    opacity: 0.5;
+    transform: translateY(10px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .nav-list {
     display: flex; 
@@ -71,6 +87,18 @@ a{
     flex-wrap: wrap;
 }
 
+.painting-container {
+    position: relative;
+    margin: 10px;
+    opacity: 0.5;
+    transform: translateY(10px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .painting-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .gallery-item {
     padding: 20px;
@@ -95,6 +123,12 @@ a{
     height: auto;
 }
 
+#modalImage {
+    max-width: 60%; /* Allocate more space to the image */
+    max-height: 80vh; /* Prevent the image from overflowing vertically */
+    cursor: grab;
+  }
+
 .modal-header {
     display: flex;
     flex-direction: row;
@@ -106,11 +140,20 @@ a{
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
+    flex-wrap: wrap;
     align-items: flex-start;
     text-align: right;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
+
+.modal-info {
+    max-width: 35%; /* Allocate more space to the description */
+    text-align: left; /* Align the text properly */
+    word-wrap: break-word; /* Ensure long words break correctly */
+    font-size: 1rem; /* Adjust font size if necessary */
+  }
 
 .modal-body .modal-info {
     display: flex;
@@ -130,25 +173,6 @@ a{
     margin: 0;
 }
 
-.zoom-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%; /* Adjust as needed */
-    max-width: 600px;
-    margin: auto;
-    cursor: zoom-in;
-}
-
-.zoom-image {
-    width: 100%;
-    transition: transform 0.3s ease;
-}
-
-.zoom-container:hover .zoom-image {
-    transform: scale(1.5); /* Adjust scale to control zoom level */
-    cursor: zoom-out;
-}
-
 @media (max-width: 768px) {
     .modal-body {
         flex-direction: column;
@@ -163,6 +187,28 @@ a{
         text-align: center;
     }
 }
+
+
+.ribbon {
+    color: #fff;
+  }
+  .ribbon {
+    --f: .4em; /* control the folded part */
+    --r: .8em; /* control the cutout */
+    
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    padding: .2em;
+    border: solid #0000;
+    border-width: 0 calc(2*var(--f)) var(--r) 0;
+    background: 
+      radial-gradient(50% 100% at bottom,#0005 98%,#0000 101%) 
+      100% 0/calc(2*var(--f)) var(--f) no-repeat border-box;
+    background-color: #2F4F4F;
+    border-radius: var(--f) var(--f) 0 0;
+    clip-path: polygon(100% 0,0 0,0 calc(100% - var(--r)),calc(50% - var(--f)) 100%,calc(100% - 2*var(--f)) calc(100% - var(--r)),calc(100% - 2*var(--f)) var(--f),100% var(--f));
+  }
 
 .two-columns-container {
     display: grid;
@@ -208,6 +254,9 @@ a{
     text-align: left;
 }
 
+#contact {
+    margin-top: 40px;
+}
 form {
     width: 100%;
     max-width: 100%; 

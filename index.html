@@ -8,15 +8,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="jquery.zoom.min.js"></script>
-        <script src="script.js"></script>
+
     </head>
 
     <body>
 
 
-    <header id="random-header">
+    <header id="random-header" class="fade-in">
         <h1>איה זהר | ציירת<br>Aya Zohar | Painter</h1>
         <nav>
             <ul class="nav-list">
@@ -29,7 +27,7 @@
     </header>
 
     <section id="gallery">
-        <h2>גלריה | Gallery</h2>
+        <h2  class="fade-in">גלריה | Gallery</h2>
         <div class="gallery-container">
         </div>
     </section>
@@ -53,7 +51,7 @@
     </div>
   </div>
 
-    <section class="two-columns-container">
+    <section class="two-columns-container fade-in" id="about">
         <div class="wider-section text">
         <h3>אודות</h3>
         <p>אני איה זהר, 35, אמנית מחיפה. מציירת בעיקר בצבעי שמן ובצבעי מים, 
@@ -71,7 +69,7 @@
     </div>
     </section>
 
-    <section class="two-columns-container">
+    <section class="two-columns-container fade-in" id="contact">
        <div class="wider-section">
         <h3>יצירת קשר | Contact</h3>
         <form>
@@ -96,7 +94,7 @@
         </div>
        </form>
     </div> 
-    <div class="thinner-section" id="contact">
+    <div class="thinner-section">
         <p>054-9732639<br>ayazohar@gmail.com</p>
         <a href="https://www.instagram.com/ayazohar/" target="_blank">
             <div class="icon"></div>
@@ -104,7 +102,7 @@
     </div>
     </section>
 
-    <footer>
+    <footer  class="fade-in">
         <ul>
             <li><a href="#gallery">גלריה | Gallery</a></li>
             <li><a href="#about">אודות | About me</a></li>
@@ -113,5 +111,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
 </body>
 </html>

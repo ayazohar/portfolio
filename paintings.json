@@ -27,7 +27,8 @@
         "id": "home-2024",
         "src": "paintings/home-2024.jpg",
         "title": "הבייתה | Home",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n30*40\n2024"
+        "description": "צבעי מים על נייר\nWatercolor on paper\n30*40\n2024",
+        "available" : true
       },
       {
         "id": "view-from-muki-2024",
