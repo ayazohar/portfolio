@@ -113,18 +113,32 @@ a{
     transform: scale(1.05);
 }
 
+.modal-dialog {
+    max-width: 80vw; /* Allow the modal to occupy more screen width */
+    max-height: 90vh; /* Ensure the modal uses most of the viewport height */
+    margin: 0 auto;
+}
+
 .modal-content {
     background-color: #FAF0E6;
+    width:auto;
+    height:auto;
 }
 
 .modal-img {
-    max-height: 80vh;
-    max-width: 60%;
+    max-height: 100%;
+    max-width: 100%;
     height: auto;
+    width: auto;
+    transition: transform 0.2s ease;
+    cursor: grab;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 #modalImage {
-    max-width: 60%; /* Allocate more space to the image */
+    max-width: 100%; /* Allocate more space to the image */
     max-height: 80vh; /* Prevent the image from overflowing vertically */
     cursor: grab;
   }
@@ -138,7 +152,7 @@ a{
 .modal-body {
     background-color: #FAF0E6;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -146,6 +160,17 @@ a{
     align-items: center;
     justify-content: center;
     height: auto;
+}
+
+.full-size-image-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 60%;
 }
 
 .modal-info {
