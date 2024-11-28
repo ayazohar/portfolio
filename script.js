@@ -1,3 +1,10 @@
+// The locale our app first shows
+const defaultLocale = "he";
+// The active locale
+let locale;
+// Gets filled with active locale translations
+let translations = {};
+
 document.addEventListener("DOMContentLoaded", function() {
   // Random header background
   const backgroundImages = [
@@ -10,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function() {
   if (header) {
       header.style.backgroundImage = randomImage;
   }
+
+    // Translate the page to the default locale
+    setLocale(defaultLocale);
+    bindLocaleSwitcher(defaultLocale);
 
   // Fade-in effect setup
   const fadeInElements = document.querySelectorAll(".fade-in");
@@ -27,6 +38,57 @@ document.addEventListener("DOMContentLoaded", function() {
       fadeInObserver.observe(element);
   });
 });
+
+//TRANSLATION CODE
+
+function bindLocaleSwitcher(initialValue) {
+    const switcher =
+      document.querySelector("[data-i18n-switcher]");
+    switcher.value = initialValue;
+    switcher.onchange = (e) => {
+      // Set the locale to the selected option[value]
+      setLocale(e.target.value);
+    };
+}
+
+// Load translations for the given locale and translate
+// the page to this locale
+async function setLocale(newLocale) {
+    if (newLocale === locale) return;
+    const newTranslations =
+      await fetchTranslationsFor(newLocale);
+    locale = newLocale;
+    translations = newTranslations;
+    document. documentElement . dir = dir ( newLocale ) ;
+    document.documentElement.lang = newLocale;
+    translatePage();
+  }
+  // Retrieve translations JSON object for the given
+  // locale over the network
+  async function fetchTranslationsFor(newLocale) {
+    const response = await fetch(`/lang/${newLocale}.json`);
+    return await response.json();
+  }
+  // Replace the inner text of each element that has a
+  // data-i18n-key attribute with the translation corresponding
+  // to its data-i18n-key
+  function translatePage() {
+    document
+      .querySelectorAll("[data-i18n-key]")
+      .forEach(translateElement);
+  }
+  // Replace the inner text of the given HTML element
+  // with the translation in the active locale,
+  // corresponding to the element's data-i18n-key
+  function translateElement(element) {
+    const key = element.getAttribute("data-i18n-key");
+    const translation = translations[key];
+    element. innerText = translation;
+  }
+
+  function dir(locale) {
+    return locale === "en" ? "ltr" : "rtl";
+  }
 
 // GENERATE PAINTINGS GALLERY
 document.addEventListener("DOMContentLoaded", function() {
@@ -61,7 +123,8 @@ document.addEventListener("DOMContentLoaded", function() {
               if (painting.available) {
                   const ribbon = document.createElement("div");
                   ribbon.classList.add("ribbon");
-                  ribbon.textContent = "זמין\nAvailable";
+                  ribbon.setAttribute("data-i18n-key","available")
+                  ribbon.textContent = "זמין";
                   container.appendChild(ribbon);
               }
 
@@ -205,3 +268,173 @@ document.addEventListener("DOMContentLoaded", function() {
       })
       .catch(error => console.error("Error fetching paintings data:", error));
 });
+
+//CAROUSEL
+
+// Fetch the JSON file and initialize the carousel
+fetch('sketches.json')
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(`Failed to fetch sketches.json: ${response.statusText}`);
+    }
+    return response.json();
+  })
+  .then((data) => {
+    console.log('Fetched data:', data);
+    const images = data.images;
+    console.log(images);
+    if (!Array.isArray(images)) {
+        throw new Error('Invalid data format: "images" is not an array');
+      }
+
+    const carouselContainer = document.querySelector('.carousel-container');
+    const carousel = new Carousel(carouselContainer, images);
+  })
+  .catch((error) => {
+    console.error('Error loading carousel data:', error);
+  });
+
+// Carousel class
+class Carousel {
+  constructor(container, images) {
+    this.container = container;
+    this.track = container.querySelector('.carousel-track');
+    this.images = images;
+    this.currentIndex = 0;
+    this.slides = [];
+    this.touchStartX = 0;
+    this.touchEndX = 0;
+    this.fallbackImageUrl = "/api/placeholder/400/300"; // Fallback image URL
+    
+    // Detect if the page is in RTL mode
+  this.isRTL = getComputedStyle(this.container).direction === 'rtl';
+  
+    this.init();
+  }
+
+  init() {
+
+    
+    // Create slides from JSON data
+    this.images.forEach((image, index) => {
+      const slide = document.createElement('div');
+      slide.className = 'carousel-slide';
+      
+      const img = document.createElement('img');
+      this.setupImage(img, image, slide);
+      
+      slide.appendChild(img);
+      this.track.appendChild(slide);
+      this.slides.push(slide);
+    });
+
+    this.updateSlides();
+    this.addEventListeners();
+  }
+
+  setupImage(img, imageData, slide) {
+    img.alt = imageData.alt;
+    img.title = imageData.title;
+
+    // Add loading attribute
+    img.loading = "lazy";
+
+    // Error handling
+    img.onerror = () => {
+      console.error(`Failed to load image: ${imageData.src}`);
+      img.src = this.fallbackImageUrl;
+      
+      // Add error message
+      const errorMessage = document.createElement('div');
+      errorMessage.className = 'error-message';
+      errorMessage.textContent = 'Image failed to load';
+      slide.appendChild(errorMessage);
+
+      // Remove error message after 3 seconds
+      setTimeout(() => {
+        errorMessage.remove();
+      }, 3000);
+    };
+
+    // Set source last to trigger load
+    img.src = imageData.src;
+  }
+
+  addEventListeners() {
+    this.container.querySelector('.carousel-button.prev').addEventListener('click', () => {
+        this.isRTL ? this.next() : this.prev();
+      });
+      
+      this.container.querySelector('.carousel-button.next').addEventListener('click', () => {
+        this.isRTL ? this.prev() : this.next();
+      });
+    
+    // Touch events
+    this.track.addEventListener('touchstart', (e) => this.handleTouchStart(e));
+    this.track.addEventListener('touchmove', (e) => this.handleTouchMove(e));
+    this.track.addEventListener('touchend', () => this.handleTouchEnd());
+  }
+
+  updateSlides() {
+    this.slides.forEach((slide, index) => {
+      slide.className = 'carousel-slide';
+      slide.style.display = 'flex';
+      if (index === this.currentIndex) {
+        slide.classList.add('current');
+      } else if (index === this.getCurrentIndex(-1)) {
+        slide.classList.add('prev');
+      } else if (index === this.getCurrentIndex(1)) {
+        slide.classList.add('next');
+    } else {
+        slide.style.display = 'none';
+  }
+  console.log(`Slide ${index} classes: ${slide.className}`);
+});
+  }
+
+  getCurrentIndex(offset) {
+    let newIndex = this.currentIndex + offset;
+    if (newIndex < 0) newIndex = this.slides.length - 1;
+    if (newIndex >= this.slides.length) newIndex = 0;
+    return newIndex;
+  }
+
+  prev() {
+    this.currentIndex = this.getCurrentIndex(-1);
+    this.updateSlides();
+  }
+
+  next() {
+    this.currentIndex = this.getCurrentIndex(1);
+    this.updateSlides();
+  }
+
+  handleTouchStart(e) {
+    this.touchStartX = e.touches[0].clientX;
+  }
+
+  handleTouchMove(e) {
+    this.touchEndX = e.touches[0].clientX;
+  }
+
+  handleTouchEnd() {
+    const touchDiff = this.touchStartX - this.touchEndX;
+    const minSwipeDistance = 50;
+  
+    if (Math.abs(touchDiff) > minSwipeDistance) {
+      if (this.isRTL) {
+        if (touchDiff > 0) {
+          this.prev(); // Swipe left in RTL -> Move to previous
+        } else {
+          this.next(); // Swipe right in RTL -> Move to next
+        }
+      } else {
+        if (touchDiff > 0) {
+          this.next(); // Swipe left -> Move to next
+        } else {
+          this.prev(); // Swipe right -> Move to previous
+        }
+      }
+    }
+  }
+}

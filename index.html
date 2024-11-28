@@ -15,19 +15,23 @@
 
 
     <header id="random-header" class="fade-in">
-        <h1>איה זהר | ציירת<br>Aya Zohar | Painter</h1>
+        <select data-i18n-switcher class="locale-switcher">
+            <option value="en">English</option>
+            <option value= "he">עברית</option > 
+          </select>
+        <h1 data-i18n-key="main-title">איה זהר | ציירת</h1>
         <nav>
             <ul class="nav-list">
-                <li><a href="#gallery">גלריה | Gallery</a></li>
-                <li><a href="#about">אודות | About me</a></li>
-                <li><a href="#contact">יצירת קשר | Contact</a></li>
+                <li><a href="#gallery" data-i18n-key="gallery-title">גלריה</a></li>
+                <li><a href="#about" data-i18n-key="about-title">אודות</a></li>
+                <li><a href="#contact" data-i18n-key="contact-title">יצירת קשר</a></li>
             </ul>
         </nav>
         
     </header>
 
     <section id="gallery">
-        <h2  class="fade-in">גלריה | Gallery</h2>
+        <h2  class="fade-in" data-i18n-key="gallery-title">גלריה</h2>
         <div class="gallery-container">
         </div>
     </section>
@@ -54,44 +58,49 @@
 
     <section class="two-columns-container fade-in" id="about">
         <div class="wider-section text">
-        <h3>אודות</h3>
-        <p>אני איה זהר, 35, אמנית מחיפה. מציירת בעיקר בצבעי שמן ובצבעי מים, 
+        <h3 data-i18n-key="about-title">אודות</h3>
+        <p data-i18n-key="about-content">אני איה זהר, 35, אמנית מחיפה. מציירת בעיקר בצבעי שמן ובצבעי מים, 
             ולעתים גם בצבעי אקריליק, ספריי ומדיומים אחרים. 
             ההשכלה האמנותית שלי כוללת מספר קורסי ציור עם מורים שונים, בנוסף להדרכה עצמית רבה. 
             אני מוצאת השראה בעיקר בטבע ובבעלי החיים סביבי, ומצפה לשתף אתכם בעבודותיי.</p>
-        <h3 class="eng">About Me</h3>
-        <p class="eng">I’m Aya Zohar, an artist based in Haifa, Israel. At 35, I primarily work with oils and watercolors, 
-            though I occasionally explore acrylics, spray paint, and other mediums. My education as an artist 
-            includes several painting courses with various teachers, complemented by a lot of self-guidance. 
-            I find inspiration mainly in the nature and animals around me. I look forward to sharing my work with you.</p>
         </div>
         <div class="thinner-section image">
         <img src="self.JPG">
     </div>
     </section>
 
+    <section class="sketches">
+        <h3 data-i18n-key="sketches">סקיצות ומתנות</h3>
+        <p class="wide-paragraph" data-i18n-key="sketches-content">הנתינה מילאה תפקיד חשוב באמנות שלי מאז ומתמיד. רבים מהציורים שלי מוקדשים לאנשים היקרים בחיי, והחיבור והאהבה לאותם אנשים נוסכים בי כוחות של חיים ויצירה. לקח לי זמן לחלוק גם את הסקיצות שלי ולזהות את הערך שבאיכות הבלתי-גמורה. כיום אני פתוחה יותר לראות את הדרכים הלא-צפויות בהן יצירות שונות נוגעות באנשים שונים, ומשתפת גם עבודות גולמיות, ניסיוניות וראשוניות. הסקיצות בחלק זה של הגלריה מוצעות למסירה, ואם אחת מהן תפסה את עיניכם, אתם מוזמנים לכתוב לי.</p>
+        <div class="carousel-container">
+            <div class="carousel-track"></div>
+            <button class="carousel-button prev">←</button>
+            <button class="carousel-button next">→</button>
+          </div>
+    </section>
+
     <section class="two-columns-container fade-in" id="contact">
        <div class="wider-section">
-        <h3>יצירת קשר | Contact</h3>
+        <h3 data-i18n-key="contact-title">יצירת קשר</h3>
         <form action="https://formspree.io/f/manypnvb" method="post">
             <div class="form-group">
-                <label for="name">שם מלא | Full Name</label><br>
+                <label for="name" data-i18n-key="form-label-name">שם מלא</label><br>
                 <input type="text" id="name" name="name" required><br>
             </div>
             <div class="form-group">
-                <label for="phone">מספר טלפון | Phone Number</label><br>
+                <label for="phone" data-i18n-key="form-label-phone">מספר טלפון</label><br>
                 <input type="tel" id="phone" name="phone"><br>
             </div>
             <div class="form-group">
-                <label for="email">דוא"ל | Email</label><br>
+                <label for="email" data-i18n-key="form-label-email">דוא"ל</label><br>
                 <input type="email" id="email" name="email" required><br>
             </div>
             <div class="form-group">
-                <label for="message">תוכן הפניה | Message</label><br>
+                <label for="message" data-i18n-key="form-label-message">תוכן הפניה</label><br>
                 <textarea id="message" name="message" rows="4" required></textarea><br>
             </div>
             <div class="form-group">
-            <button type="submit">שלח | Submit</button>
+            <button type="submit" data-i18n-key="form-submit">שלח</button>
         </div>
        </form>
     </div> 
@@ -105,9 +114,9 @@
 
     <footer  class="fade-in">
         <ul>
-            <li><a href="#gallery">גלריה | Gallery</a></li>
-            <li><a href="#about">אודות | About me</a></li>
-            <li><a href="#contact">יצירת קשר | Contact</a></li>
+            <li><a href="#gallery" data-i18n-key="gallery-title">גלריה</a></li>
+            <li><a href="#about" data-i18n-key="about-title">אודות</a></li>
+            <li><a href="#contact" data-i18n-key="contact-title">יצירת קשר</a></li>
         </ul>
     </footer>
 

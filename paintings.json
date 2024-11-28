@@ -1,5 +1,19 @@
 [
-    {
+  {
+    "id": "for-whom-the-bell-tolls-2024",
+    "src": "paintings/for-whom-the-bell-tolls-2024.jpg",
+    "title": "למי צלצלו הפעמונים | For Whom the Bell Tolls",
+    "description": "מרקרים על נייר\nMarkers on paper\n11*15\n2024",
+    "available" : false
+  },
+  {
+    "id": "knot",
+    "src": "paintings/knot.jpg",
+    "title": "קשר | Knot",
+    "description": "רפידוגרף על נייר\nRapidograph on paper\n10*15\n2024",
+    "available" : true
+  },  
+  {
       "id": "ravid-4-2024",
       "src": "paintings/ravid-4-2024.jpg",
       "title": "רביד-4 | Ravid-4",
