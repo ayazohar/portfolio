@@ -280,9 +280,7 @@ fetch('sketches.json')
     return response.json();
   })
   .then((data) => {
-    console.log('Fetched data:', data);
     const images = data.images;
-    console.log(images);
     if (!Array.isArray(images)) {
         throw new Error('Invalid data format: "images" is not an array');
       }
@@ -388,7 +386,7 @@ class Carousel {
     } else {
         slide.style.display = 'none';
   }
-  console.log(`Slide ${index} classes: ${slide.className}`);
+
 });
   }
 
