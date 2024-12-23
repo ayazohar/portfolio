@@ -310,6 +310,73 @@ option {
     margin-right: 15%;
 }
 
+/*glide*/
+
+.glide {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.glide__track {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.glide__slides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.glide__slide {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.glide__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.glide__arrows {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 2;
+}
+
+.glide__arrow {
+    position: absolute;
+    padding: 8px 14px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.glide__arrow--left {
+    left: 10px;
+}
+
+.glide__arrow--right {
+    right: 10px;
+}
+/*
 .carousel-container {
     width: 100%;
     max-width: 1200px;
@@ -420,6 +487,8 @@ option {
 .carousel-button.next {
     right: 20px;
 }
+
+*/
 
 form {
     width: 100%;
