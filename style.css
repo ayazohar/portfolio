@@ -232,6 +232,7 @@ option {
 
 .ribbon {
     color: #fff;
+    z-index: 2;
 }
 .ribbon {
     --f: 0.4em; /* control the folded part */

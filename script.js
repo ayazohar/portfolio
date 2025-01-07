@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'url("paintings/view-from-ravid-2023.jpg")',
         'url("paintings/view-from-muki-2024.HEIC")',
         'url("paintings/the-adventure-2024.jpg")',
+        'url("paintings/for-whom-the-bell-tolls-color-2024.jpeg")',
     ]
     const randomImage =
         backgroundImages[Math.floor(Math.random() * backgroundImages.length)]
@@ -296,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function () {
         )
 })
 
-//GLIDE
+/*GLIDE
 
 const glideContainer = document.querySelector('.glide__slides')
 
