@@ -5,6 +5,8 @@ body {
     font-family: 'Noto Sans', 'Noto Sans Hebrew', sans-serif;
 }
 
+#carousel{ width:50vw; min-width:380px; margin:auto; overflow-x: hidden;}
+#carousel-strip{display: flex; gap:12px; overflow-x: scroll;}
 header {
     height: 500px;
     color: white;
@@ -15,6 +17,8 @@ header {
     background-size: cover;
     background-position: center 30%;
 }
+
+.carousel-image{ width:40vw; min-width: 380px; object-fit: contain;}
 
 h1 {
     font-size: 48px;

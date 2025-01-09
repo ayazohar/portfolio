@@ -297,6 +297,26 @@ document.addEventListener('DOMContentLoaded', function () {
         )
 })
 
+function leftCarousel(){
+  const currentPosition=document.querySelector("#carousel-strip").scrollLeft
+  const newPosition = currentPosition - 392
+
+  document.querySelector("#carousel-strip").scroll({
+    top: 100,
+    left: newPosition,
+    behavior: "smooth",
+  });
+}
+function rightCarousel(){
+  const currentPosition=document.querySelector("#carousel-strip").scrollLeft
+  const newPosition = currentPosition + 392
+
+  document.querySelector("#carousel-strip").scroll({
+    top: 100,
+    left: newPosition,
+    behavior: "smooth",
+  });
+}
 /*GLIDE
 
 const glideContainer = document.querySelector('.glide__slides')
