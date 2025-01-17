@@ -1,137 +1,151 @@
 [
   {
     "id": "for-whom-the-bell-tolls-2024",
-    "src": "paintings/for-whom-the-bell-tolls-2024.jpg",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121460/for-whom-the-bell-tolls-color-2024_t0ws1z.jpg",
     "title": "למי צלצלו הפעמונים | For Whom the Bell Tolls",
     "description": "מרקרים על נייר\nMarkers on paper\n11*15\n2024",
-    "available" : false
+    "available": false
+  },
+  {
+    "id": "cat-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121461/cat-2024_rjavas.jpg",
+    "title": "חתול | Cat",
+    "description": "מרקרים על נייר\nMarkers on paper\n15*11\n2024",
+    "available": false
+  },
+  {
+    "id": "lupines-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121460/lupine-2024_puqdb7.jpg",
+    "title": "תורמוסים | Lupines",
+    "description": "שמן על קרטון\nOil on cardboard\n30*40\n2024",
+    "available": false
   },
   {
     "id": "knot",
-    "src": "paintings/knot.jpg",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121462/knot_xfdgta.jpg",
     "title": "קשר | Knot",
     "description": "רפידוגרף על נייר\nRapidograph on paper\n10*15\n2024",
-    "available" : true
-  },  
+    "available": true
+  },
   {
-      "id": "ravid-4-2024",
-      "src": "paintings/ravid-4-2024.jpg",
-      "title": "רביד-4 | Ravid-4",
-      "description": "צבעי מים על נייר\nWatercolor on paper\n18*13\n2024"
-    },
-    {
-      "id": "ravid-3-2024",
-      "src": "paintings/ravid-3-2024.jpg",
-      "title": "רביד-3 | Ravid-3",
-      "description": "צבעי מים על נייר\nWatercolor on paper\n18*13\n2024"
-    },
-    {
-        "id": "ravid-2-2024",
-        "src": "paintings/ravid-2-2024.jpg",
-        "title": "רביד-2 | Ravid-2",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n18*13\n2024"
-      },
-      {
-        "id": "ravid-1-2024",
-        "src": "paintings/ravid-1-2024.jpg",
-        "title": "רביד-1 | Ravid-1",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n18*13\n2024"
-      },
-      {
-        "id": "home-2024",
-        "src": "paintings/home-2024.jpg",
-        "title": "הבייתה | Home",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n30*40\n2024",
-        "available" : true
-      },
-      {
-        "id": "view-from-muki-2024",
-        "src": "paintings/view-from-muki-2024.HEIC",
-        "title": "נוף ממוקי | View from Muki",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n30*40\n2024"
-      },
-      {
-        "id": "the-adventure-2024",
-        "src": "paintings/the-adventure-2024.jpg",
-        "title": "ההרפתקה | The Adventure",
-        "description": "שמן על בד\nOil on Canvas\n60*60\n2023-2024"
-      },
-      {
-        "id": "butterfly-3-2023",
-        "src": "paintings/butterfly-3-2023.jpg",
-        "title": "פרפר-3 | Butterfly-3",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n10*10\n2023"
-      },
-      {
-        "id": "butterfly-2-2023",
-        "src": "paintings/butterfly-2-2023.jpg",
-        "title": "פרפר-2 | Butterfly-2",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n10*10\n2023"
-      },
-      {
-        "id": "butterfly-1-2023",
-        "src": "paintings/butterfly-1-2023.jpg",
-        "title": "פרפר-1 | Butterfly-1",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n10*10\n2023"
-      },
-      {
-        "id": "view-from-ravid-2023",
-        "src": "paintings/view-from-ravid-2023.jpg",
-        "title": "נוף מרביד | View from Ravid",
-        "description": "שמן על בד\nOil on Canvas\n80*120\n2023"
-      },
-      {
-        "id": "still-life-2023",
-        "src": "paintings/still-life-2023.jpg",
-        "title": "טבע דומם | Still Life",
-        "description": "שמן על בד\nOil on Canvas\n40*30\n2023"
-      },
-      {
-        "id": "lighthouse-2023",
-        "src": "paintings/lighthouse-2023.jpg",
-        "title": "מגדלור| Lighthouse-1",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n40*30\n2023"
-      },
-      {
-        "id": "figures-2022",
-        "src": "paintings/figures-2022.jpg",
-        "title": "דמויות| Figures",
-        "description": "צבעי מים על נייר\nWatercolor on paper\n25*40\n2022"
-      },
-      {
-        "id": "roi-2022",
-        "src": "paintings/roi-2022.jpg",
-        "title": "רועי | Roi",
-        "description": "אקריליק על בד\nAcrilic on canvas\n80*50\n2022"
-      },
-      {
-        "id": "bird-2021",
-        "src": "paintings/bird-2021.jpg",
-        "title": "ציפור | Bird",
-        "description": "אקריליק על בד\nAcrilic on canvas\n90*70\n2022"
-      },
-      {
-        "id": "alfie-2019",
-        "src": "paintings/alfie-2019.jpg",
-        "title": "אלפי | Alfie",
-        "description": "אקריליק על בד\nAcrilic on canvas\n90*70\n2019"
-      },
-      {
-        "id": "self-from-back-2017",
-        "src": "paintings/self-from-back-2017.jpg",
-        "title": "עצמי מאחור | Self from Back",
-        "description": "אקריליק על בד\nAcrilic on canvas\n100*100\n2017"
-      },
-      {
-        "id": "disco-cat-2016",
-        "src": "paintings/disco-cat-2016.jpg",
-        "title": "חתול דיסקו | Disco Cat",
-        "description": "ספריי על בד\nSpray paint on canvas\n80*80\n2016"
-      },
-      {
-        "id": "hamburg-watertower-2016",
-        "src": "paintings/hamburg-watertower-2016.jpg",
-        "title": "מגדל המים בהמבורג | Hamburg Watertower",
-        "description": "אקריליק על בד\nAcrilic on canvas\n90*80\n2016"
-      }
-  ]
+    "id": "ravid-4-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121457/ravid-4-2024_fwcgpq.jpg",
+    "title": "רביד-4 | Ravid-4",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n18*13\n2024"
+  },
+  {
+    "id": "ravid-3-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121457/ravid-3-2024_tco9rh.jpg",
+    "title": "רביד-3 | Ravid-3",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n18*13\n2024"
+  },
+  {
+    "id": "ravid-2-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121457/ravid-2-2024_um6x7l.jpg",
+    "title": "רביד-2 | Ravid-2",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n18*13\n2024"
+  },
+  {
+    "id": "ravid-1-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121457/ravid-1-2024_jol8q0.jpg",
+    "title": "רביד-1 | Ravid-1",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n18*13\n2024"
+  },
+  {
+    "id": "home-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121458/home-2024_lmfjgr.jpg",
+    "title": "הבייתה | Home",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n30*40\n2024",
+    "available": true
+  },
+  {
+    "id": "view-from-muki-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121459/view-from-muki-2024_zh75gw.jpg",
+    "title": "נוף ממוקי | View from Muki",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n30*40\n2024"
+  },
+  {
+    "id": "the-adventure-2024",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121459/the-adventure-2024_bdp8hw.jpg",
+    "title": "ההרפתקה | The Adventure",
+    "description": "שמן על בד\nOil on Canvas\n60*60\n2023-2024"
+  },
+  {
+    "id": "butterfly-3-2023",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121462/butterfly-3-2023_ri0h8c.jpg",
+    "title": "פרפר-3 | Butterfly-3",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n10*10\n2023"
+  },
+  {
+    "id": "butterfly-2-2023",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121462/butterfly-2-2023_knda4w.jpg",
+    "title": "פרפר-2 | Butterfly-2",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n10*10\n2023"
+  },
+  {
+    "id": "butterfly-1-2023",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121456/butterfly-1-2023_euju92.jpg",
+    "title": "פרפר-1 | Butterfly-1",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n10*10\n2023"
+  },
+  {
+    "id": "view-from-ravid-2023",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121462/view-from-ravid-2023_kama88.jpg",
+    "title": "נוף מרביד | View from Ravid",
+    "description": "שמן על בד\nOil on Canvas\n80*120\n2023"
+  },
+  {
+    "id": "still-life-2023",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121455/still-life-2023_yhnphs.jpg",
+    "title": "טבע דומם | Still Life",
+    "description": "שמן על בד\nOil on Canvas\n40*30\n2023"
+  },
+  {
+    "id": "lighthouse-2023",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121455/lighthouse-2023_dblu9c.jpg",
+    "title": "מגדלור| Lighthouse-1",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n40*30\n2023"
+  },
+  {
+    "id": "figures-2022",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121459/figures-2022_r607ep.jpg",
+    "title": "דמויות| Figures",
+    "description": "צבעי מים על נייר\nWatercolor on paper\n25*40\n2022"
+  },
+  {
+    "id": "roi-2022",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121456/roi-2022_oowvk1.jpg",
+    "title": "רועי | Roi",
+    "description": "אקריליק על בד\nAcrilic on canvas\n80*50\n2022"
+  },
+  {
+    "id": "bird-2021",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121455/bird-2021_zutop7.jpg",
+    "title": "ציפור | Bird",
+    "description": "אקריליק על בד\nAcrilic on canvas\n90*70\n2022"
+  },
+  {
+    "id": "alfie-2019",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121455/alfie-2019_mldfpw.jpg",
+    "title": "אלפי | Alfie",
+    "description": "אקריליק על בד\nAcrilic on canvas\n90*70\n2019"
+  },
+  {
+    "id": "self-from-back-2017",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121459/self-from-back-2017_hyisup.jpg",
+    "title": "עצמי מאחור | Self from Back",
+    "description": "אקריליק על בד\nAcrilic on canvas\n100*100\n2017"
+  },
+  {
+    "id": "disco-cat-2016",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121460/disco-cat-2016_hz9u2u.jpg",
+    "title": "חתול דיסקו | Disco Cat",
+    "description": "ספריי על בד\nSpray paint on canvas\n80*80\n2016"
+  },
+  {
+    "id": "hamburg-watertower-2016",
+    "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121455/hamburg-watertower-2016_yritog.jpg",
+    "title": "מגדל המים בהמבורג | Hamburg Watertower",
+    "description": "אקריליק על בד\nAcrilic on canvas\n90*80\n2016"
+  }
+]
