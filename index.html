@@ -1,230 +1,183 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
-    <head>
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-        />
-        <title>הגלריה של איה | Aya's Gallery</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-    </head>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>הגלריה של איה | Aya's Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <body>
-        <header id="random-header" class="fade-in">
-            <select data-i18n-switcher class="locale-switcher">
-                <option value="en">English</option>
-                <option value="he">עברית</option>
-            </select>
-            <h1 data-i18n-key="main-title">איה זהר | גלריה</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li>
-                        <a href="#paintings" data-i18n-key="paintings-title"
-                            >ציורים</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#about" data-i18n-key="about-title">אודות</a>
-                    </li>
-                    <li>
-                        <a href="#sketches" data-i18n-key="sketches-title"
-                            >סקיצות</a
-                        >
-                    </li>
-                    <li>
-                        <a href="#contact" data-i18n-key="contact-title"
-                            >יצירת קשר</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <body>
+    <header id="random-header" class="fade-in">
+      <select data-i18n-switcher class="locale-switcher">
+        <option value="en">English</option>
+        <option value="he">עברית</option>
+      </select>
+      <h1 data-i18n-key="main-title">איה זהר | גלריה</h1>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <a href="#paintings" data-i18n-key="paintings-title">ציורים</a>
+          </li>
+          <li>
+            <a href="#about" data-i18n-key="about-title">אודות</a>
+          </li>
+          <li>
+            <a href="#sketches" data-i18n-key="sketches-title">סקיצות</a>
+          </li>
+          <li>
+            <a href="#contact" data-i18n-key="contact-title">יצירת קשר</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <section id="paintings">
-            <h2 class="fade-in" data-i18n-key="paintings-title">ציורים</h2>
-            <div class="gallery-container"></div>
-        </section>
+    <section id="paintings">
+      <h2 class="fade-in" data-i18n-key="paintings-title">ציורים</h2>
+      <div class="gallery-container"></div>
+    </section>
 
-        <!-- Modal -->
-        <div
-            class="modal fade"
-            id="imageModal"
-            tabindex="-1"
-            aria-labelledby="imageModalLabel"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog modal-lg modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal"
-                            aria-label="Close"
-                        ></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="full-size-image-container">
-                            <img
-                                src=""
-                                id="modalImage"
-                                class="modal-img"
-                                alt="Full size painting"
-                            />
-                        </div>
-                        <div class="modal-info">
-                            <h5 class="modal-title" id="imageModalLabel"></h5>
-                            <p id="modalDescription"></p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="full-size-image-container">
+              <img
+                src=""
+                id="modalImage"
+                class="modal-img"
+                alt="Full size painting"
+              />
             </div>
+            <div class="modal-info">
+              <h5 class="modal-title" id="imageModalLabel"></h5>
+              <p id="modalDescription"></p>
+            </div>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <section class="two-columns-container fade-in" id="about">
-            <div class="wider-section text">
-                <h3 data-i18n-key="about-title">אודות</h3>
-                <p data-i18n-key="about-content">
-                    אני איה זהר, 35, אמנית מחיפה. מציירת בעיקר בצבעי שמן ובצבעי
-                    מים, ולעתים גם בצבעי אקריליק, ספריי ומדיומים אחרים. ההשכלה
-                    האמנותית שלי כוללת מספר קורסי ציור עם מורים שונים, בנוסף
-                    להדרכה עצמית רבה. אני מוצאת השראה בעיקר בטבע ובבעלי החיים
-                    סביבי, ומצפה לשתף אתכם בעבודותיי.
-                </p>
-            </div>
-            <div class="thinner-section image">
-                <img src="self.JPG" />
-            </div>
-        </section>
+    <section class="two-columns-container fade-in" id="about">
+      <div class="wider-section text">
+        <h3 data-i18n-key="about-title">אודות</h3>
+        <p data-i18n-key="about-content">
+          אני איה זהר, 35, אמנית מחיפה. מציירת בעיקר בצבעי שמן ובצבעי מים,
+          ולעתים גם בצבעי אקריליק, ספריי ומדיומים אחרים. ההשכלה האמנותית שלי
+          כוללת מספר קורסי ציור עם מורים שונים, בנוסף להדרכה עצמית רבה. אני
+          מוצאת השראה בעיקר בטבע ובבעלי החיים סביבי, ומצפה לשתף אתכם בעבודותיי.
+        </p>
+      </div>
+      <div class="thinner-section image">
+        <img src="self.JPG" />
+      </div>
+    </section>
 
+    <section class="sketches-class" id="sketches">
+      <h3 data-i18n-key="sketches-title">סקיצות</h3>
+      <p class="wide-paragraph" data-i18n-key="sketches-content">
+        הנתינה מילאה תפקיד חשוב באמנות שלי מאז ומתמיד. רבים מהציורים שלי מוקדשים
+        לאנשים היקרים בחיי, והחיבור והאהבה לאותם אנשים נוסכים בי כוחות של חיים
+        ויצירה. לקח לי זמן לחלוק גם את הסקיצות שלי ולזהות את הערך שבאיכות
+        הבלתי-גמורה. כיום אני פתוחה יותר לראות את הדרכים הלא-צפויות בהן יצירות
+        שונות נוגעות באנשים שונים, ומשתפת גם עבודות גולמיות, ניסיוניות
+        וראשוניות. הסקיצות בחלק זה של הגלריה מוצעות למסירה, ואם אחת מהן תפסה את
+        עיניכם, אתם מוזמנים לכתוב לי.
+      </p>
 
+      <div id="carousel">
+        <div id="carousel-strip"></div>
+        <button class="carousel-button" onclick="rightCarousel()"><</button
+        >&emsp;
+        <button class="carousel-button" onclick="leftCarousel()">></button>
+      </div>
+    </section>
 
-        <section class="sketches-class" id="sketches">
-            <h3 data-i18n-key="sketches-title">סקיצות</h3>
-            <p class="wide-paragraph" data-i18n-key="sketches-content">
-                הנתינה מילאה תפקיד חשוב באמנות שלי מאז ומתמיד. רבים מהציורים שלי
-                מוקדשים לאנשים היקרים בחיי, והחיבור והאהבה לאותם אנשים נוסכים בי
-                כוחות של חיים ויצירה. לקח לי זמן לחלוק גם את הסקיצות שלי ולזהות
-                את הערך שבאיכות הבלתי-גמורה. כיום אני פתוחה יותר לראות את הדרכים
-                הלא-צפויות בהן יצירות שונות נוגעות באנשים שונים, ומשתפת גם
-                עבודות גולמיות, ניסיוניות וראשוניות. הסקיצות בחלק זה של הגלריה
-                מוצעות למסירה, ואם אחת מהן תפסה את עיניכם, אתם מוזמנים לכתוב לי.
-            </p>
+    <section class="two-columns-container fade-in" id="contact">
+      <div class="wider-section">
+        <h3 data-i18n-key="contact-title">יצירת קשר</h3>
+        <form action="https://formspree.io/f/manypnvb" method="post">
+          <div class="form-group">
+            <label for="name" data-i18n-key="form-label-name">שם מלא</label
+            ><br />
+            <input type="text" id="name" name="name" required /><br />
+          </div>
+          <div class="form-group">
+            <label for="phone" data-i18n-key="form-label-phone"
+              >מספר טלפון</label
+            ><br />
+            <input type="tel" id="phone" name="phone" /><br />
+          </div>
+          <div class="form-group">
+            <label for="email" data-i18n-key="form-label-email">דוא"ל</label
+            ><br />
+            <input type="email" id="email" name="email" required /><br />
+          </div>
+          <div class="form-group">
+            <label for="message" data-i18n-key="form-label-message"
+              >תוכן הפניה</label
+            ><br />
+            <textarea id="message" name="message" rows="4" required></textarea
+            ><br />
+          </div>
+          <div class="form-group">
+            <button type="submit" data-i18n-key="form-submit">שלח</button>
+          </div>
+        </form>
+      </div>
+      <div class="thinner-section">
+        <p>054-9732639<br />ayazohar@gmail.com</p>
+        <a href="https://www.instagram.com/ayazohar/" target="_blank">
+          <div class="icon"></div>
+          <br />ayazohar</a
+        >
+      </div>
+    </section>
 
-            <div id="carousel">
-                <div id="carousel-strip">
-                    <img class="carousel-image" src="/paintings/paperboat-2022.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/view-from-ravid-2023.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/ravid-3-2024.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/figures-2022.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/paperboat-2022.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/view-from-ravid-2023.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/ravid-3-2024.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/figures-2022.jpg" alt="">   <img class="carousel-image" src="/paintings/paperboat-2022.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/view-from-ravid-2023.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/ravid-3-2024.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/figures-2022.jpg" alt="">   <img class="carousel-image" src="/paintings/paperboat-2022.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/view-from-ravid-2023.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/ravid-3-2024.jpg" alt="">
-                    <img class="carousel-image" src="/paintings/figures-2022.jpg" alt="">
-                </div>
-                <button onclick="rightCarousel()"><</button><button onclick="leftCarousel()">></button>
-            </div>
-        </section>
+    <footer class="fade-in">
+      <ul>
+        <li>
+          <a href="#paintings" data-i18n-key="paintings-title">ציורים</a>
+        </li>
+        <li><a href="#about" data-i18n-key="about-title">אודות</a></li>
+        <li>
+          <a href="#sketches" data-i18n-key="sketches-title">סקיצות</a>
+        </li>
+        <li>
+          <a href="#contact" data-i18n-key="contact-title">יצירת קשר</a>
+        </li>
+      </ul>
+    </footer>
 
-        <section class="two-columns-container fade-in" id="contact">
-            <div class="wider-section">
-                <h3 data-i18n-key="contact-title">יצירת קשר</h3>
-                <form action="https://formspree.io/f/manypnvb" method="post">
-                    <div class="form-group">
-                        <label for="name" data-i18n-key="form-label-name"
-                            >שם מלא</label
-                        ><br />
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            required
-                        /><br />
-                    </div>
-                    <div class="form-group">
-                        <label for="phone" data-i18n-key="form-label-phone"
-                            >מספר טלפון</label
-                        ><br />
-                        <input type="tel" id="phone" name="phone" /><br />
-                    </div>
-                    <div class="form-group">
-                        <label for="email" data-i18n-key="form-label-email"
-                            >דוא"ל</label
-                        ><br />
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            required
-                        /><br />
-                    </div>
-                    <div class="form-group">
-                        <label for="message" data-i18n-key="form-label-message"
-                            >תוכן הפניה</label
-                        ><br />
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="4"
-                            required
-                        ></textarea
-                        ><br />
-                    </div>
-                    <div class="form-group">
-                        <button type="submit" data-i18n-key="form-submit">
-                            שלח
-                        </button>
-                    </div>
-                </form>
-            </div>
-            <div class="thinner-section">
-                <p>054-9732639<br />ayazohar@gmail.com</p>
-                <a href="https://www.instagram.com/ayazohar/" target="_blank">
-                    <div class="icon"></div>
-                    <br />ayazohar</a
-                >
-            </div>
-        </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 
-        <footer class="fade-in">
-            <ul>
-                <li>
-                    <a href="#paintings" data-i18n-key="paintings-title"
-                        >ציורים</a
-                    >
-                </li>
-                <li><a href="#about" data-i18n-key="about-title">אודות</a></li>
-                <li>
-                    <a href="#sketches" data-i18n-key="sketches-title"
-                        >סקיצות</a
-                    >
-                </li>
-                <li>
-                    <a href="#contact" data-i18n-key="contact-title"
-                        >יצירת קשר</a
-                    >
-                </li>
-            </ul>
-        </footer>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-
-        <script src="script.js"></script>
-    </body>
+    <script src="script.js"></script>
+  </body>
 </html>
