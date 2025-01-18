@@ -1,174 +1,184 @@
 {
-    "images": [
-        {
-            "src": "sketches/IMG_5009.jpg",
-            "alt": "River View",
-            "title": "River View"
-        },
-        {
-            "src": "sketches/5D5EB3D8-C906-4428-A9FA-2D6952DB855C.jpg",
-            "alt": "Butterfly",
-            "title": "Butterfly"
-        },
-        {
-            "src": "sketches/33A44EF2-387A-4188-BC8E-C5216D6ABCA9.jpg",
-            "alt": "Dragon",
-            "title": "Dragon"
-        },
-        {
-            "src": "sketches/IMG_4348.jpg",
-            "alt": "Kiss",
-            "title": "Kiss"
-        },
-        {
-            "src": "sketches/IMG_4362.jpg",
-            "alt": "Potion",
-            "title": "Potion"
-        },
-        {
-            "src": "sketches/IMG_4409.HEIC",
-            "alt": "Liberation",
-            "title": "Liberation"
-        },
-        {
-            "src": "sketches/IMG_4425.jpg",
-            "alt": "Magic",
-            "title": "Magic"
-        },
-        {
-            "src": "sketches/IMG_4439.HEIC",
-            "alt": "Dance",
-            "title": "Dance"
-        },
-        {
-            "src": "sketches/IMG_4486.jpg",
-            "alt": "Home",
-            "title": "Home"
-        },
-        {
-            "src": "sketches/IMG_4523.HEIC",
-            "alt": "Lion",
-            "title": "Lion"
-        },
-        {
-            "src": "sketches/IMG_4577.jpg",
-            "alt": "Dreams",
-            "title": "Dreams"
-        },
-        {
-            "src": "sketches/IMG_4578.jpg",
-            "alt": "Clouds",
-            "title": "Clouds"
-        },
-        {
-            "src": "sketches/IMG_4579.jpg",
-            "alt": "Cristal",
-            "title": "Cristal"
-        },
-        {
-            "src": "sketches/IMG_4580.jpg",
-            "alt": "Pheonix",
-            "title": "Pheonix"
-        },
-        {
-            "src": "sketches/IMG_4581.jpg",
-            "alt": "Unicorn",
-            "title": "Unicorn"
-        },
-        {
-            "src": "sketches/IMG_4582.jpg",
-            "alt": "Whale",
-            "title": "Whale"
-        },
-        {
-            "src": "sketches/IMG_4761.jpg",
-            "alt": "Scubadiver",
-            "title": "Scubadiver"
-        },
-        {
-            "src": "sketches/IMG_4762.jpg",
-            "alt": "Island",
-            "title": "Island"
-        },
-        {
-            "src": "sketches/IMG_4763.jpg",
-            "alt": "Circus",
-            "title": "Circus"
-        },
-        {
-            "src": "sketches/IMG_4764.jpg",
-            "alt": "Fly",
-            "title": "Fly"
-        },
-        {
-            "src": "sketches/IMG_4765.jpg",
-            "alt": "Star",
-            "title": "Star"
-        },
-        {
-            "src": "sketches/IMG_4766.jpg",
-            "alt": "Fantasy",
-            "title": "Fantasy"
-        },
-        {
-            "src": "sketches/IMG_4767.jpg",
-            "alt": "Innocence",
-            "title": "Innocence"
-        },
-        {
-            "src": "sketches/IMG_4768.jpg",
-            "alt": "Cupcake",
-            "title": "Cupcake"
-        },
-        {
-            "src": "sketches/IMG_4769.jpg",
-            "alt": "Sea",
-            "title": "Sea"
-        },
-        {
-            "src": "sketches/IMG_4770.jpg",
-            "alt": "Bubble",
-            "title": "Bubble"
-        },
-        {
-            "src": "sketches/IMG_4771.jpg",
-            "alt": "Laungerie",
-            "title": "Laungerie"
-        },
-        {
-            "src": "sketches/IMG_4772.jpg",
-            "alt": "Machine",
-            "title": "Machine"
-        },
-        {
-            "src": "sketches/IMG_4773.jpg",
-            "alt": "Hover",
-            "title": "Hover"
-        },
-        {
-            "src": "sketches/IMG_4774.jpg",
-            "alt": "Turtle",
-            "title": "Turtle"
-        },
-        {
-            "src": "sketches/IMG_4775.jpg",
-            "alt": "Experiment",
-            "title": "Experiment"
-        },
-        {
-            "src": "sketches/paperboat-2022.jpg",
-            "alt": "Paperboat",
-            "title": "Paperboat"
-        },
-        {
-            "src": "sketches/IMG_4425.jpg",
-            "alt": "Cat Scratcher",
-            "title": "Cat Scratcher"
-        },
-        {
-            "src": "sketches/IMG_4821.jpg",
-            "alt": "Woman Sculpture #1",
-            "title": "Woman Sculpture #1"
-        }
-    ]
+  "images": [
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121613/IMG_5009_itthdx.jpg",
+      "alt": "River View",
+      "title": "River View"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121614/for-whom-the-bell-tolls-2024_phtca6.jpg",
+      "alt": "For Whom the Bell Tolls",
+      "title": "For Whom the Bell Tolls"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121621/IMG_4821_ukgoyg.jpg",
+      "alt": "Woman Sculpture",
+      "title": "Woman Sculpture"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121621/IMG_4802_ltogff.jpg",
+      "alt": "Japan View",
+      "title": "Japan View"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121615/5D5EB3D8-C906-4428-A9FA-2D6952DB855C_ff4a7u.jpg",
+      "alt": "Butterfly",
+      "title": "Butterfly"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121615/33A44EF2-387A-4188-BC8E-C5216D6ABCA9_f3k1ux.jpg",
+      "alt": "Dragon",
+      "title": "Dragon"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121614/IMG_4348_ff9vy1.jpg",
+      "alt": "Kiss",
+      "title": "Kiss"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121614/IMG_4362_dxj9qs.jpg",
+      "alt": "Potion",
+      "title": "Potion"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121617/IMG_4409_krg678.jpg",
+      "alt": "Liberation",
+      "title": "Liberation"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121616/IMG_4425_vvwsve.jpg",
+      "alt": "Magic",
+      "title": "Magic"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121615/IMG_4439_yr5f8b.jpg",
+      "alt": "Dance",
+      "title": "Dance"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121628/IMG_4486_ox04tw.jpg",
+      "alt": "Home",
+      "title": "Home"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121619/IMG_4523_h9u6kk.jpg",
+      "alt": "Lion",
+      "title": "Lion"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121621/IMG_4577_vscrdu.jpg",
+      "alt": "Dreams",
+      "title": "Dreams"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121619/IMG_4578_rteoie.jpg",
+      "alt": "Clouds",
+      "title": "Clouds"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121625/IMG_4579_eqf7jq.jpg",
+      "alt": "Cristal",
+      "title": "Cristal"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121626/IMG_4580_vrf9fi.jpg",
+      "alt": "Pheonix",
+      "title": "Pheonix"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121620/IMG_4581_bqipf9.jpg",
+      "alt": "Unicorn",
+      "title": "Unicorn"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121626/IMG_4582_vxf9el.jpg",
+      "alt": "Whale",
+      "title": "Whale"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121621/IMG_4761_tjhau2.jpg",
+      "alt": "Scubadiver",
+      "title": "Scubadiver"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121626/IMG_4762_kowmny.jpg",
+      "alt": "Island",
+      "title": "Island"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121624/IMG_4763_swfnmq.jpg",
+      "alt": "Circus",
+      "title": "Circus"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121618/IMG_4764_xu5kzf.jpg",
+      "alt": "Fly",
+      "title": "Fly"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121644/IMG_4765_h9vqdz.jpg",
+      "alt": "Star",
+      "title": "Star"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121648/IMG_4766_quzcbv.jpg",
+      "alt": "Fantasy",
+      "title": "Fantasy"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121645/IMG_4767_bybwvo.jpg",
+      "alt": "Innocence",
+      "title": "Innocence"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121650/IMG_4768_l9lsni.jpg",
+      "alt": "Cupcake",
+      "title": "Cupcake"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121644/IMG_4769_nykctp.jpg",
+      "alt": "Sea",
+      "title": "Sea"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121643/IMG_4770_wi1apd.jpg",
+      "alt": "Bubble",
+      "title": "Bubble"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121643/IMG_4771_kopnhr.jpg",
+      "alt": "Laungerie",
+      "title": "Laungerie"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121626/IMG_4772_nw86ba.jpg",
+      "alt": "Machine",
+      "title": "Machine"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121643/IMG_4773_u0nmhr.jpg",
+      "alt": "Hover",
+      "title": "Hover"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121647/IMG_4774_pa030n.jpg",
+      "alt": "Turtle",
+      "title": "Turtle"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121628/IMG_4775_ojgprr.jpg",
+      "alt": "Experiment",
+      "title": "Experiment"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121612/paperboat-2022_vap09n.jpg",
+      "alt": "Paperboat",
+      "title": "Paperboat"
+    },
+    {
+      "src": "https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121614/IMG_4225_cejgr8.jpg",
+      "alt": "Cat Scratcher",
+      "title": "Cat Scratcher"
+    }
+  ]
 }
