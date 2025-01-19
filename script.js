@@ -8,10 +8,10 @@ let translations = {};
 document.addEventListener("DOMContentLoaded", function () {
   // Random header background
   const backgroundImages = [
-    'url("paintings/view-from-ravid-2023.jpg")',
-    'url("paintings/view-from-muki-2024.HEIC")',
-    'url("paintings/the-adventure-2024.jpg")',
-    'url("paintings/for-whom-the-bell-tolls-color-2024.jpeg")',
+    'url("https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121462/view-from-ravid-2023_kama88.jpg")',
+    'url("https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121459/view-from-muki-2024_zh75gw.jpg")',
+    'url("https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121459/the-adventure-2024_bdp8hw.jpg")',
+    'url("https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121460/for-whom-the-bell-tolls-color-2024_t0ws1z.jpg")',
   ];
   const randomImage =
     backgroundImages[Math.floor(Math.random() * backgroundImages.length)];
