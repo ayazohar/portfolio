@@ -64,6 +64,8 @@ a {
 
 option {
   color: #2f4f4f;
+  background-color: #faf0e6;
+  border: none;
 }
 
 .nav-list {

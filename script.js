@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     'url("https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121459/view-from-muki-2024_zh75gw.jpg")',
     'url("https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121459/the-adventure-2024_bdp8hw.jpg")',
     'url("https://res.cloudinary.com/dwh5ifdmu/image/upload/v1737121460/for-whom-the-bell-tolls-color-2024_t0ws1z.jpg")',
+    'url("https://res.cloudinary.com/dwh5ifdmu/image/upload/v1748096894/view_from_bet_shearim_2025_ipsirr.jpg")'
   ];
   const randomImage =
     backgroundImages[Math.floor(Math.random() * backgroundImages.length)];

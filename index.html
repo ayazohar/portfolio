@@ -127,18 +127,18 @@
           <div class="form-group">
             <label for="name" data-i18n-key="form-label-name">שם מלא</label
             ><br />
-            <input type="text" id="name" name="name" required /><br />
+            <input type="text" id="name" name="name" required autocomplete="name"/><br />
           </div>
           <div class="form-group">
             <label for="phone" data-i18n-key="form-label-phone"
               >מספר טלפון</label
             ><br />
-            <input type="tel" id="phone" name="phone" /><br />
+            <input type="tel" id="phone" name="phone" autocomplete="tel"/><br />
           </div>
           <div class="form-group">
             <label for="email" data-i18n-key="form-label-email">דוא"ל</label
             ><br />
-            <input type="email" id="email" name="email" required /><br />
+            <input type="email" id="email" name="email" required autocomplete="email"/><br />
           </div>
           <div class="form-group">
             <label for="message" data-i18n-key="form-label-message"
@@ -153,7 +153,14 @@
         </form>
       </div>
       <div class="thinner-section">
-        <p>054-9732639<br />ayazohar@gmail.com</p>
+        <p id="contactInfo"></p>
+<script>
+  const phone = "054-9732639";
+  const email = "ayazohar@gmail.com";
+  const mailLink = `<a href="mailto:${email}">${email}</a>`;
+  const telLink = `<a href="tel:${phone.replace(/-/g, '')}">${phone}</a>`;
+  document.getElementById("contactInfo").innerHTML = `${telLink}<br>${mailLink}`;
+</script>
         <a href="https://www.instagram.com/ayazohar/" target="_blank">
           <div class="icon"></div>
           <br />ayazohar</a
